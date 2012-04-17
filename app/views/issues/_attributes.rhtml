@@ -59,6 +59,8 @@
 </div>
 
 <div style="clear:both;"> </div>
+<% unless User.current.allowed_to?(:edit_custom_fields, @project, :global => true).nil? %>
 <%= render :partial => 'issues/form_custom_fields' %>
+<% end %>
 
 <% end %>
