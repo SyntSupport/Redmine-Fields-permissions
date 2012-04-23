@@ -16,5 +16,7 @@ Redmine::Plugin.register :redmine_fields_permissions do
   
   # Permissions for estimated hours field
   permission :edit_estimated_hours, :issues => :index
+
+  permission :edit_start_date, :issues => :index
 end
 
